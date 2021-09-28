@@ -1,31 +1,27 @@
-﻿using System;
+using System;
 
-namespace sak
+namespace _2222
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string[] ord = new string[5];
+            int[] tal = new int[5];        
             
             Console.WriteLine("Skriv fem tal");
 
-            for (int i = 0; i < ord.Length; i++)
+            for (int i = 0; i < tal.Length; i++)
             {
-                tal[i] = Console.ReadLine();
+                tal[i] = int.Parse(Console.ReadLine());
             }
+            Console.WriteLine("Här är de numeriskt.");
 
-            Console.WriteLine("Här är de sorterade alfabetiskt.");
+            Array.Reverse(tal);
 
-            Array.Sort(ord);
-
-            for (int i = 0; i < ord.Length; i++)
+            for (int i = 0; i < tal.Length; i++)
             {
-                Console.WriteLine(ord[i]);
+                Console.WriteLine(tal[i]);
             }
-
-
-
 
         }
     }
